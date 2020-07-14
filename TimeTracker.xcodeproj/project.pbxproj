@@ -13,7 +13,9 @@
 		467FC84723F3738C00C15592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84623F3738C00C15592 /* Assets.xcassets */; };
 		467FC84A23F3738C00C15592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467FC84823F3738C00C15592 /* LaunchScreen.storyboard */; };
 		467FC84D23F3738C00C15592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FC84C23F3738C00C15592 /* main.m */; };
+		993E659C24BE546E0090B043 /* DBETimedTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 993E659B24BE546E0090B043 /* DBETimedTaskController.m */; };
 		9944FC8424BE485F00E2A152 /* DBETimedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9944FC8324BE485F00E2A152 /* DBETimedTask.m */; };
+		99A0146E24BE5D4C00DD9D44 /* DBETimeTrackerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A0146D24BE5D4C00DD9D44 /* DBETimeTrackerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +29,12 @@
 		467FC84923F3738C00C15592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467FC84B23F3738C00C15592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467FC84C23F3738C00C15592 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		993E659A24BE546E0090B043 /* DBETimedTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBETimedTaskController.h; sourceTree = "<group>"; };
+		993E659B24BE546E0090B043 /* DBETimedTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBETimedTaskController.m; sourceTree = "<group>"; };
 		9944FC8224BE485F00E2A152 /* DBETimedTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBETimedTask.h; sourceTree = "<group>"; };
 		9944FC8324BE485F00E2A152 /* DBETimedTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBETimedTask.m; sourceTree = "<group>"; };
+		99A0146C24BE5D4C00DD9D44 /* DBETimeTrackerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBETimeTrackerViewController.h; sourceTree = "<group>"; };
+		99A0146D24BE5D4C00DD9D44 /* DBETimeTrackerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBETimeTrackerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,8 @@
 		467FC85C23F376B400C15592 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				99A0146C24BE5D4C00DD9D44 /* DBETimeTrackerViewController.h */,
+				99A0146D24BE5D4C00DD9D44 /* DBETimeTrackerViewController.m */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -112,6 +120,8 @@
 		467FC85D23F3784C00C15592 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				993E659A24BE546E0090B043 /* DBETimedTaskController.h */,
+				993E659B24BE546E0090B043 /* DBETimedTaskController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -190,6 +200,8 @@
 				467FC83C23F3738B00C15592 /* AppDelegate.m in Sources */,
 				467FC84D23F3738C00C15592 /* main.m in Sources */,
 				9944FC8424BE485F00E2A152 /* DBETimedTask.m in Sources */,
+				993E659C24BE546E0090B043 /* DBETimedTaskController.m in Sources */,
+				99A0146E24BE5D4C00DD9D44 /* DBETimeTrackerViewController.m in Sources */,
 				467FC83F23F3738B00C15592 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
