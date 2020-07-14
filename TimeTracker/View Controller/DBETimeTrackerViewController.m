@@ -18,6 +18,7 @@
 @property (nonatomic) NSString* workSummary;
 @property (nonatomic) double hourlyRate;
 @property (nonatomic) double hoursWorked;
+@property (nonatomic) double total;
 
 // Private Outlets
 @property (weak, nonatomic) IBOutlet UITextField *clientTextField;
@@ -37,7 +38,7 @@
     
     self.timedTaskController = [[DBETimedTaskController alloc] init];
     
-    [self.tableView dataSource];
+    self.tableView.dataSource = self;
 }
 
 // Private Actions
@@ -47,21 +48,24 @@
     self.workSummary = self.summaryTextField.text;
     self.hourlyRate = [self.rateTextField.text doubleValue];
     self.hoursWorked = [self.hoursWorkedTextField.text doubleValue];
+    self.total = _hoursWorked * _hourlyRate;
     
     [self.timedTaskController createTimedTaskWithClient:self.client
                                             workSummary:self.workSummary
                                              hourlyRate:self.hourlyRate
                                             hoursWorked:self.hoursWorked];
     
-    //    DBETimedTask *newTask = [[DBETimedTask alloc] initWithClient:self.client
-    //                                                     workSummary:self.workSummary
-    //                                                      hourlyRate:self.hourlyRate
-    //                                                     hoursWorked:self.hoursWorked];
-    //
-    //    [self.timedTaskController.timedTasks addObject: newTask];
+    // Debugging print statements that I'd like to keep for future reference
+//    printf("%f", self.hourlyRate);
+//    printf("total:%f", self.total);
+    
+    self.clientTextField.text = @"";
+    self.summaryTextField.text = @"";
+    self.rateTextField.text = @"";
+    self.hoursWorkedTextField.text = @"";
     
     [self.tableView reloadData];
-    printf("%f", self.hourlyRate);
+
 }
 // MARK: - UITableViewDataSource
 

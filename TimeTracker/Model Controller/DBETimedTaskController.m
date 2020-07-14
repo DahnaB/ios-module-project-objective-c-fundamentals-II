@@ -39,6 +39,4 @@
    [self.timedTasks addObject: newTask];
 }
 
-
-
 @end
