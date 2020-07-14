@@ -36,7 +36,7 @@
                                                       hourlyRate:hourlyRate
                                                      hoursWorked:hoursWorked];
     
-    [self.timedTasks addObject: newTask];
+   [self.timedTasks addObject: newTask];
 }
 
 
